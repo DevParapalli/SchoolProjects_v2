@@ -1,0 +1,1 @@
+"Write a Program to read data from data file in read mode and append the data in given file in python."

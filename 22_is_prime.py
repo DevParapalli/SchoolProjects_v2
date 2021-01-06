@@ -1,0 +1,1 @@
+"Write a Program to show whether the entered number is prime or not"

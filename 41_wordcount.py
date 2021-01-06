@@ -1,0 +1,1 @@
+"Write a Program to read data from data file in read mode and count the particular word occurrencesin given string, number of times in python."

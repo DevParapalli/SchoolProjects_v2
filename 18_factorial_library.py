@@ -1,0 +1,1 @@
+"Write a Program to find factorial of entered number using library functionfact()"

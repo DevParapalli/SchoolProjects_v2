@@ -1,0 +1,1 @@
+"Write a Program to read data from data file in append mode and use writeLines function utility in python."
