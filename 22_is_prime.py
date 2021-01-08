@@ -19,3 +19,8 @@ def main():
         
 if __name__ == "__main__":
     main()
+
+__OUTPUT__ = """
+Enter number to check: 13
+Number 13 is Prime
+"""

@@ -1,4 +1,5 @@
-"Write a Program to read data from data file in read mode and count the particular word occurrences in given string, number of times in python."
+"Write a Program to read data from data file in read mode and count the particular "
+"word occurrences in given string, number of times in python."
 
 import re
 
@@ -34,3 +35,8 @@ sorted_ranking = sorted(ranking_list, key=lambda x: -1 * x[1]) # we multiple by 
 
 
 print(sorted_ranking[0:5]) # gets the top most 5 in order
+
+
+__OUTPUT__ = """
+[('to', 22), ('your', 21), ('the', 16), ('account', 10), ('and', 8)]
+"""

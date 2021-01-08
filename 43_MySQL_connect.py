@@ -2,13 +2,13 @@
 import mysql.connector
 
 mydb = mysql.connector.connect(
-    host="localhost",
-    user="dev_parapalli",
-    password="thisisnotapassword",
-    database="thisisnotadatabase"
+    host="127.0.0.1", # Loopback to self.
+    user="python",
+    password="python",
+    database="python"
 )
 
-mycursor = mydb.cursor()
+mycursor = mydb.cursor(buffered=True)
 mycursor.execute("SHOW TABLES")
 
 for x in mycursor:
@@ -16,9 +16,9 @@ for x in mycursor:
 
 # optional here
 mycursor.execute(
-    "CREATE TABLE customers (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), address VARCHAR(255))")
+    "CREATE TABLE person (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), addr VARCHAR(255))")
 
-sql = "INSERT INTO customers (name, address) VALUES (%s, %s)"
+sql = "INSERT INTO person (name, addr) VALUES (%s, %s)"
 
 val = [
     ('Dev', 'Nagpur'),
@@ -30,3 +30,16 @@ val = [
 mycursor.executemany(sql, val)
 
 mydb.commit()  # finalizes the connection
+
+
+__OUTPUT__ = """
++----+--------+--------+
+| id | name   | addr   |
++----+--------+--------+
+|  1 | Dev    | Nagpur |
+|  2 | Patil  | Delhi  |
+|  3 | Kural  | Patna  |
+|  4 | George | Indore |
++----+--------+--------+
+4 rows in set (0.01 sec)
+"""

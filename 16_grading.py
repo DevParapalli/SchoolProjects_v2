@@ -34,18 +34,19 @@ if __name__ == "__main__":
     main()
 
 
-__OUTPUT__ = """ 
+
+__OUTPUT__ = """
 let maxMarks = 80;
-Enter Marks for Subject A: 20
-Enter Marks for Subject B: 60
-Enter Marks for Subject C: 80
-Enter Marks for Subject D: 80
+Enter Marks for Subject A: 79
+Enter Marks for Subject B: 73
+Enter Marks for Subject C: 61
+Enter Marks for Subject D: 51
 Enter Marks for Subject E: 80
 
-Grade for A: F,
-Grade for B: C,
-Grade for C: A,
-Grade for D: A,
+Grade for A: A,
+Grade for B: A,
+Grade for C: B,
+Grade for D: C,
 Grade for E: A,
 Average Grade: B
 """

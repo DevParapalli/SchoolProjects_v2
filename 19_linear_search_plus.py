@@ -132,3 +132,20 @@ def main():
             
 if __name__ == "__main__":
     main()
+
+__OUTPUT__ = """
++----------MENU----------+
+| 1. Populate Array      |
+| 2. Print Array         |
+| 3. Selection Sort      |
+| 4. Linear Search       |
+| 5. Binary Search - R   |
+| 6. Binary Search - I   |
+| 7. Lowest Term         |
+| 99. Quit               |
++------------------------+
+
+>>> 3
+BEFORE SORT: [13, 14, 15, 1, 3, 2, 19]
+AFTER SORT:  [1, 2, 3, 13, 14, 15, 19]
+"""

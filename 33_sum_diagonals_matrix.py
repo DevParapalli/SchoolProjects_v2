@@ -34,3 +34,16 @@ def main():
 if __name__ == "__main__":
     main()
 
+
+
+__OUTPUT__ = """
+Enter Dimension (Square Matrix Only):2
+Enter Value for ROW 0 COL 0: 1
+Enter Value for ROW 0 COL 1: 2
+Enter Value for ROW 1 COL 0: 3
+Enter Value for ROW 1 COL 1: 4
+[1, 2]
+[3, 4]
+Primary Diagonal: 5
+Secondary Diagonal: 5
+"""

@@ -15,3 +15,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+__OUTPUT__ = """
+Enter Number of iter: 4
+10 9 8 7 
+6 5 4
+3 2
+1
+"""

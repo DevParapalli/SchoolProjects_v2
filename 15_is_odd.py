@@ -16,3 +16,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+__OUTPUT__ = """
+Enter Number to Check: 13
+Number 13 is ODD
+"""
