@@ -1,5 +1,6 @@
 "Write a Program to show database connectivity of python Data Frames with mysql database"
 import mysql.connector
+import pandas
 
 # Boilerplate code 
 database = mysql.connector.connect(
@@ -36,15 +37,16 @@ def dump_data():
 def main():
     dump_data()
     result = cursor.fetchall()
-    for x in result:
-        print(x)
+    df = pandas.DataFrame(result)
+    print(df)
 
 if __name__ == "__main__":
     main()
 
 __OUTPUT__ = """
-(1, 'Dev', 'Nagpur')
-(2, 'Patil', 'Delhi')
-(3, 'Kural', 'Patna')
-(4, 'George', 'Indore')
+   0       1       2
+0  1     Dev  Nagpur
+1  2   Patil   Delhi
+2  3   Kural   Patna
+3  4  George  Indore
 """
