@@ -3,12 +3,12 @@
 __max_marks__ = 80
 
 def result(mark):
-    __metric = mark / (__max_marks__/2)
-    if __metric <= 0.825: return "F"
-    if __metric <= 1.25: return "D"
-    if __metric <= 1.5: return "C"
-    if __metric <= 1.75: return "B"
-    if __metric <= 2.0: return "A"
+    __metric = mark / (__max_marks__)
+    if __metric <= 0.4125: return "F"
+    if __metric <= 0.625: return "D"
+    if __metric <= 0.75: return "C"
+    if __metric <= 0.875: return "B"
+    if __metric <= 1.0: return "A"
 
 def main():
     print("let maxMarks = 80;")

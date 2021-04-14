@@ -15,7 +15,7 @@ def main():
     print("Subtraction :   {}".format(subtraction(alpha, beta)))
     print("Multiplication: {}".format(multiplication(alpha, beta)))
     if beta == 0.0 :
-        print("Division by Zero Not Supported")
+        print("Division by Zero Not Defined")
     else:
         print("Division :      {}".format(division(alpha, beta)))
 
